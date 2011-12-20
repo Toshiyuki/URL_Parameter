@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>URL_Parameter test</title>
+<script type="text/javascript" src="url_parameter.js"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+var obj = new URL_Parameter('http://www.nomade.biz/test.html');
+
+document.write(obj.showProtocol());
+
+document.write("<br />");
+
+document.write(obj.showDomain());
+
+document.write("<br />");
+
+document.write(obj.showFile());
+
+</script>
+</body>
+</html>
