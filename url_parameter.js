@@ -7,6 +7,7 @@ function URL_Parameter(url) {
 	
 	var g = /(https?|ftp):\/\//g;
 	
+	//protocol
   	if (url.match(g)) {
 		protocol = url.match(g);
 		this.url = url.replace(g,'');
@@ -16,7 +17,7 @@ function URL_Parameter(url) {
 	
 	var result = this.url.split("/");
 	
-	
+	//
 	this.showProtocol = function(){
 		return protocol;
 	}
@@ -28,8 +29,20 @@ function URL_Parameter(url) {
 	}
 	
 	//
+	this.showFolder = function(){
+		;
+	}
+	
+	//
 	this.showFile = function(){
 		var file = result[result.length - 1];
 		return file;
 	}
+	
+	//
+	this.showParameter = function(){
+		;
+	}
+	
+	
 }
