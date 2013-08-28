@@ -8,17 +8,29 @@
 
 <body>
 <script type="text/javascript">
-var obj = new URL_Parameter('http://www.nomade.biz/test.html');
+var obj = new URL_Parameter('http://www.nomade.biz/test1/test2/test.html?u=123#hash');
 
 document.write(obj.showProtocol());
 
 document.write("<br />");
 
-document.write(obj.showDomain());
+document.write(obj.showHost());
+
+document.write("<br />");
+
+document.write(obj.showFolder());
 
 document.write("<br />");
 
 document.write(obj.showFile());
+
+document.write("<br />");
+
+document.write(obj.showParameter());
+
+document.write("<br />");
+
+document.write(obj.showHash());
 
 </script>
 </body>
